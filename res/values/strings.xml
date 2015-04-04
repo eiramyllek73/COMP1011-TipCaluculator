@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TipCalculatorApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="bill_total">Bill Total</string>
+    <string name="_0_00">0.00</string>
+    <string name="_10_">10%</string>
+    <string name="_15_">15%</string>
+    <string name="_20_">20%</string>
+    <string name="tip">Tip</string>
+    <string name="total">Total</string>
+    <string name="custom">Custom</string>
+    <string name="_18_">18%</string>
+
+</resources>
