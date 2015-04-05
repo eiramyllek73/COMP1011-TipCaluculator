@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tableLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,7 +20,8 @@
             android:gravity="right"
             android:paddingRight="5dp"
             android:text="@string/bill_total"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="RtlSymmetry,RtlHardcoded" />
 
         <EditText
             android:id="@+id/billEditText"
@@ -32,7 +34,8 @@
             android:focusable="true"
             android:inputType="numberDecimal"
             android:longClickable="true"
-            android:text="@string/_0_00" >
+            android:text="@string/_0_00"
+            tools:ignore="LabelFor" >
 
             <requestFocus />
         </EditText>
@@ -41,32 +44,37 @@
     <TableRow
         android:id="@+id/tableRow1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:baselineAligned="true" >
 
         <TextView
             android:id="@+id/tenTextView"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_column="1"
-            android:gravity="center|right"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="center|end"
             android:text="@string/_10_"
             android:textColor="#000" />
 
         <TextView
             android:id="@+id/fifteenTextView"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center|right"
+            android:layout_weight="1"
+            android:gravity="center|end"
             android:text="@string/_15_"
             android:textColor="#000" />
 
         <TextView
             android:id="@+id/twentyTextView"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center|right"
+            android:layout_weight="1"
+            android:gravity="center|end"
             android:text="@string/_20_"
             android:textColor="#000" />
+
     </TableRow>
 
     <TableRow
@@ -81,7 +89,8 @@
             android:gravity="right"
             android:paddingRight="5dp"
             android:text="@string/tip"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="RtlSymmetry,RtlHardcoded" />
 
         <EditText
             android:id="@+id/tipTenEditText"
@@ -95,7 +104,8 @@
             android:inputType="numberDecimal"
             android:longClickable="false"
             android:text="@string/_0_00"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="LabelFor" />
 
         <EditText
             android:id="@+id/TipFifteenEditText"
@@ -109,7 +119,8 @@
             android:inputType="numberDecimal"
             android:longClickable="false"
             android:text="@string/_0_00"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="LabelFor" />
 
         <EditText
             android:id="@+id/tipTwentyEditText"
@@ -123,7 +134,9 @@
             android:inputType="numberDecimal"
             android:longClickable="false"
             android:text="@string/_0_00"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="LabelFor" />
+
     </TableRow>
 
     <TableRow
@@ -138,7 +151,8 @@
             android:gravity="right"
             android:paddingRight="5dp"
             android:text="@string/total"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="RtlSymmetry,RtlHardcoded" />
 
         <EditText
             android:id="@+id/totalTenEditText"
@@ -152,7 +166,8 @@
             android:inputType="numberDecimal"
             android:longClickable="false"
             android:text="@string/_0_00"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="LabelFor" />
 
         <EditText
             android:id="@+id/totalFifteenEditText"
@@ -166,7 +181,8 @@
             android:inputType="numberDecimal"
             android:longClickable="false"
             android:text="@string/_0_00"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="LabelFor" />
 
         <EditText
             android:id="@+id/totalTwentyEditText"
@@ -180,7 +196,9 @@
             android:inputType="numberDecimal"
             android:longClickable="false"
             android:text="@string/_0_00"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="LabelFor" />
+
     </TableRow>
 
     <TableRow
@@ -196,7 +214,8 @@
             android:paddingBottom="5dp"
             android:paddingRight="5dp"
             android:text="@string/custom"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="RtlSymmetry,RtlHardcoded" />
 
         <SeekBar
             android:id="@+id/customSeekBar"
@@ -217,7 +236,9 @@
             android:gravity="right|center_vertical"
             android:paddingBottom="5dp"
             android:text="@string/_18_"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="RtlHardcoded" />
+
     </TableRow>
 
     <TableRow
@@ -232,7 +253,8 @@
             android:gravity="center|right"
             android:paddingRight="5dp"
             android:text="@string/tip"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="RtlSymmetry,RtlHardcoded" />
 
         <EditText
             android:id="@+id/tipCustomEditText"
@@ -246,7 +268,8 @@
             android:inputType="numberDecimal"
             android:longClickable="false"
             android:text="@string/_0_00"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="LabelFor" />
 
         <TextView
             android:id="@+id/totalCustomTextView"
@@ -255,7 +278,8 @@
             android:gravity="right"
             android:paddingRight="5dp"
             android:text="@string/total"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="RtlSymmetry,RtlHardcoded" />
 
         <EditText
             android:id="@+id/totalCustomEditText"
@@ -269,7 +293,9 @@
             android:inputType="numberDecimal"
             android:longClickable="false"
             android:text="@string/_0_00"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="LabelFor" />
+
     </TableRow>
 
 </TableLayout>
